@@ -40,4 +40,4 @@ RUN mkdir -p /opt/android/sdk && cd /opt/android/sdk \
     && sdkmanager --sdk_root=${ANDROID_HOME} platform-tools
 
 # Copy the editor_settings.tres that contains setup adb and jarsigner paths
-COPY editor_settings.tres /root/.godot/
+COPY editor_settings-3.tres /root/.config/godot/

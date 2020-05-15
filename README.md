@@ -12,7 +12,7 @@ docker build -t rgpaul/godot-ci .
 docker run -v "$(pwd):/project" -t rgpaul/godot-ci godot --path "/project" --export "Windows Desktop" "build/SampleGame.exe"
 ```
 
-## create the docker image for android (includes the android sdk for signing)
+## create the docker image for android (includes java and the android sdk for signing)
 ```
-docker build -t rgpaul/godot-android-ci ./android
+docker build -t rgpaul/godot-ci:android ./android
 ```

@@ -30,8 +30,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
     openssl \
-    python \
-    python-openssl \
+    python3 \
+    python3-openssl \
     unzip \
     zip \
     && rm -rf /var/lib/apt/lists/*

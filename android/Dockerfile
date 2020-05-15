@@ -26,8 +26,6 @@ ENV ANDROID_HOME "/opt/android/sdk"
 # adds adb and jarsigner to the PATH
 ENV PATH="$PATH:/opt/android/sdk/tools/bin:/opt/android/sdk/platform-tools"
 
-USER root
-
 # Install OpenJDK
 RUN apt-get update && apt-get install -y --no-install-recommends \
     openjdk-11-jdk \
